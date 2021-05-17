@@ -1,4 +1,4 @@
-import Appbase from 'appbase-js'; // installed alongside reactivesearch-native
+import Appbase from 'appbase-js';
 
 import CONFIG from './../constants/Config';
 
@@ -15,7 +15,6 @@ class TodoModel {
         });
     }
 
-    // adds new todo to Elasticsearch
     add(todo) {
         const body = {
             ...todo,
@@ -35,7 +34,6 @@ class TodoModel {
             });
     }
 
-    // updates an existing todo on Elasticsearch
     update = (editedTodo) => {
         const { _id, touched, ...todo } = editedTodo;
 
@@ -57,7 +55,6 @@ class TodoModel {
             });
     };
 
-    // remove a todo from Elasticsearch
     destroy = (todo) => {
         this.appbaseRef
             .delete({

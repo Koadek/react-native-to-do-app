@@ -17,7 +17,6 @@ const routeOptions = {
     navigationOptions: commonNavigationOptions,
 };
 
-// different routes for all, active and completed todos
 const TabNav = TabNavigator(
     {
         [CONSTANTS.ALL]: routeOptions,

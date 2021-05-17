@@ -8,7 +8,6 @@ import CONFIG from '../constants/Config';
 import COLORS from '../constants/Colors';
 import MainTabNavigator from './MainTabNavigator';
 
-// our root component
 export default class RootComponent extends React.Component {
     state = {
         isReady: false,
